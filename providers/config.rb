@@ -17,7 +17,8 @@ def install_haproxy_config
     mode 00644
     variables(
       :defaults_options => defaults_options,
-      :defaults_timeouts => defaults_timeouts
+      :defaults_timeouts => defaults_timeouts,
+      :defaults_stats => defaults_stats
     )
   end
 end
@@ -32,6 +33,10 @@ end
 
 def defaults_timeouts
   node['haproxy']['defaults_timeouts']
+end
+
+def defaults_stats
+  node['haproxy']['defaults_stats']
 end
 
 def set_updated
