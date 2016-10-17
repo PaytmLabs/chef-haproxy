@@ -63,6 +63,7 @@ Attributes
 - `node['haproxy']['group']` - group that haproxy runs as
 - `node['haproxy']['global_max_connections']` - in the `app_lb` config, set the global maxconn
 - `node['haproxy']['member_max_connections']` - the maxconn value to
+- `node['haproxy']['defaults_max_connections']` - set the defaults maxconn
   be set for each app server if not otherwise specified in the members attribute
 - `node['haproxy']['frontend_max_connections']` - in the `app_lb` config, set the the maxconn per frontend member
 - `node['haproxy']['frontend_ssl_max_connections']` - in the `app_lb` config, set the maxconn per frontend member using SSL

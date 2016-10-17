@@ -18,6 +18,7 @@ defaults
   log     global
   mode    <%= node['haproxy']['mode'] %>
   retries <%= node['haproxy']['defaults_retries'] %>
+  maxconn <%= node['haproxy']['defaults_max_connections'] %>
 <% @defaults_timeouts.sort.map do | value, time | -%>
   timeout <%= value %> <%= time %>
 <% end -%>
