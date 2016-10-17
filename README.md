@@ -53,6 +53,7 @@ Attributes
 - `node['haproxy']['pid_file']` - the PID file of the haproxy process, used in the tuning recipe.
 - `node['haproxy']['global_options']` - global options, like tuning. Format must be of `{ 'option' => 'value' }`; defaults to `{}`.
 - `node['haproxy']['defaults_options']` - an array of options to use for the config file's `defaults` stanza, default is ["httplog", "dontlognull", "redispatch"]
+- `node['haproxy']['defaults_stats']` - an array of stats options to use for the config file's `defaults` stanza
 - `node['haproxy']['defaults_timeouts']['connect']` - connect timeout in defaults stanza
 - `node['haproxy']['defaults_timeouts']['client']` - client timeout in defaults stanza
 - `node['haproxy']['defaults_timeouts']['server']` - server timeout in defaults stanza

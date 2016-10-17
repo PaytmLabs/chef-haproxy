@@ -62,6 +62,7 @@ default['haproxy']['pid_file'] = "/var/run/haproxy.pid"
 default['haproxy']['syslog']['length'] = nil
 
 default['haproxy']['defaults_options'] = ["httplog", "dontlognull", "redispatch"]
+default['haproxy']['defaults_stats'] = ["enable", "hide-version", "realm Haproxy\\ Statistics", "uri /haproxy_stats", "auth haproxy:haproxy@123"]
 default['haproxy']['x_forwarded_for'] = false
 default['haproxy']['global_options'] = {}
 default['haproxy']['defaults_timeouts']['connect'] = "5s"
